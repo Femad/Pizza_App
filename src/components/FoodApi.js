@@ -1,4 +1,4 @@
-const mealData = [
+export const mealData = [
   {
     id: 1,
     category: "pasta",
@@ -81,4 +81,40 @@ const mealData = [
       "Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque",
   },
 ];
-export default mealData;
+
+export const orderNow = [
+  {
+    id: 1,
+    dayCaption: "Tasty Thursdays",
+    amountOff: 20,
+    image: "/src/assets/01.jpg",
+  },
+  {
+    id: 2,
+    dayCaption: "Pizza Days",
+    amountOff: 15,
+    image: "/src/assets/02.jpg",
+  },
+];
+export const catButon = [
+  {
+    id: 1,
+    catValue: "burger",
+    btnValue: "Burger",
+  },
+  {
+    id: 2,
+    catValue: "pizza",
+    btnValue: "Pizza",
+  },
+  {
+    id: 3,
+    catValue: "pasta",
+    btnValue: "Pasta",
+  },
+  {
+    id: 4,
+    catValue: "fries",
+    btnValue: "Fries",
+  },
+];
