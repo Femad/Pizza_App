@@ -11,11 +11,10 @@ const App = () => {
   const [foods, setFoods] = useState(mealData);
 
   const filterCategory = (category) => {
-    setFoods([
-      mealData.filter((item) => {
-        return item.category === category;
-      }),
-    ]);
+    const filteredFoods = mealData.filter((item) => {
+      return item.category === category;
+    });
+    setFoods(filteredFoods);
   };
   return (
     <div className="">
@@ -47,7 +46,7 @@ const App = () => {
               All
             </button>
             <button
-              onClick={() => filterCategory("Burger")}
+              onClick={() => filterCategory("burger")}
               className="py-[3px] px-[6px] rounded-[10px] text-center font-bold hover:text-white hover:bg-black border-[1px] focus:text-white focus:bg-black"
             >
               Burger
@@ -59,7 +58,7 @@ const App = () => {
               Pizza
             </button>
             <button
-              onClick={() => filterCategory("Pasta")}
+              onClick={() => filterCategory("pasta")}
               className="py-[3px] px-[6px] rounded-[10px] text-center font-bold hover:text-white hover:bg-black border-[1px] focus:text-white focus:bg-black"
             >
               Pasta
