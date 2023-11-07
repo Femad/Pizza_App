@@ -3,8 +3,8 @@ import { BsFillCartFill } from "react-icons/bs";
 
 const OurMenu = (props) => {
   return (
-    <div className="h-[425px] w-[98%]  mb-[15px] md:w-[30%] mx-2  bg-[#343a40] rounded-[10px] relative  ">
-      <div className=" bg-[#f1f2f3] mt-0 h-[40%] w-[100%] rounded-es-[45px] rounded-ss-[6px] rounded-se-[6px] absolute">
+    <div className="h-[425px] w-[98%]  mb-[15px] md:w-[30%] mx-2  bg-[#343a40] rounded-[15px] relative  ">
+      <div className=" bg-[#f1f2f3] mt-0 h-[40%] w-[100%] rounded-es-[45px] rounded-ss-[12px] rounded-se-[12px] absolute">
         <div className="w-[150px]mx-auto pt-4 flex items-center justify-center">
           <img
             src={props.img}
@@ -19,7 +19,10 @@ const OurMenu = (props) => {
         <div className=" mt-[10px] flex justify-between items-center  ">
           <h6 className="font-500">=N={props.price}</h6>
           <span className="rounded-full bg-[#ffbe33] p-2 cursor-pointer">
-            <BsFillCartFill className="cursor-pointer" />
+            <BsFillCartFill
+              className="cursor-pointer"
+              onClick={props.onClick}
+            />
           </span>
         </div>
       </div>

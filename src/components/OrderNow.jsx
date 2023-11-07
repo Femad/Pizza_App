@@ -12,15 +12,15 @@ const OrderNow = (props) => {
         />
       </div>
       <div className="mt-[15px] flex flex-col justify-center mb-[15px] ">
-        <h3 className="text-white italic font-mono font-bold text-[20px] ">
+        <h3 className="text-white italic font-[cursive] font-bold text-[20px] ">
           {props.daysCaption}
         </h3>
-        <div className="text-[40px] text-white italic font-mono font-bold text-center ">
+        <div className="text-[40px] text-white italic font-[cursive] font-bold text-center ">
           {props.amountOff}%
           <span className="font-thin text-[16px] ml-[5px] ">off</span>
         </div>
         <button className="bg-[#ffc107] hover:bg-[#dbad24] self-center flex justify-center items-center text-white p-[8px] rounded-full w-[160px] ">
-          Order Now{" "}
+          Order Now
           <BsFillCartFill className="text-white text-[20px] ml-[8px]" />
         </button>
       </div>
